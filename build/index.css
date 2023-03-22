@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 95%;
+}
+
+.div_input .input, .div_input textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+.div_input textarea {
+  width: 212px;
+}
+
+/*# sourceMappingURL=index.css.map */
