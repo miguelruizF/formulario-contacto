@@ -9,28 +9,34 @@
 </head>
 <body>
     <section>
-        <div id="informacion" class="info">
-            <div class="telefono">
-                <h3 class="text_title"></h3>
-                <p class="text_p"></p>
+        <div class="div_principal">
+            <div id="informacion" class="info">
+                <div class="div_info">
+                    <div class="telefono">
+                        <h3 class="text_title">Llámanos</h3>
+                        <p class="text_p">1(123)-456-789</p>
+                    </div>
+                    <div class="ubicacion">
+                        <h3 class="text_title">Ubicación</h3>
+                        <p class="text_p">121 Rock Street, 21 Avenue, Nueva York, NY 92103-9000</p>
+                    </div>
+                </div>
             </div>
-            <div class="ubicacion">
-                <h3 class="text_title"></h3>
-                <p class="text_p"></p>
-            </div>
-        </div>
-        <div id="formulario">
-            <div class="container">
+            <div id="formulario" class="info">
                 <form action="">
                     <h2 class="title_form">Contactame</h2>
                     <div class="div_input">
-                        <input type="text" class="input" placeholder="Name">
-                        <input type="email" class="input" placeholder="Email Address">
-                        <input type="text" class="input" placeholder="Phone">
-                        <input type="text" class="input" placeholder="Subject">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <div class="input_fields">
+                            <input type="text" class="input" placeholder="Name">
+                            <input type="email" class="input" placeholder="Email Address">
+                            <input type="text" class="input" placeholder="Phone">
+                            <input type="text" class="input" placeholder="Subject">
+                        </div>
+                        <div class="msg">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <button type="submit">Enviar</button>
+                        </div>
                     </div>
-                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </div>
