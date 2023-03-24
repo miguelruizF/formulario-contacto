@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 *,
 *::before,
 *::after {
@@ -15,6 +16,7 @@ body {
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
   background-color: aliceblue;
 }
 
@@ -42,6 +44,15 @@ section {
 .div_principal .info > #formulario {
   position: relative;
 }
+.div_principal .info .div_info div {
+  margin: 5rem 0;
+}
+.div_principal .info .div_info div h3 {
+  font-size: 3rem;
+}
+.div_principal .info .div_info div p {
+  font-size: 2rem;
+}
 .div_principal #informacion {
   width: 60%;
   display: flex;
@@ -63,15 +74,24 @@ section {
 }
 
 #formulario {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 40%;
+  height: 70rem;
+  margin-right: 5rem;
+  display: flex;
+  align-items: center;
 }
 #formulario form {
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 0 4rem;
+}
+#formulario form .title_form {
+  color: #c5ecfd;
+  text-align: center;
+  font-size: 3.5rem;
 }
 #formulario form .div_input {
   display: flex;
@@ -80,10 +100,33 @@ section {
   margin-right: 4rem;
   width: 48%;
 }
+#formulario form .div_input .input_fields input {
+  font-size: 2rem;
+}
 #formulario form .div_input .msg {
   display: inherit;
   width: 48%;
   flex-direction: column;
+}
+#formulario form .div_input .msg textarea {
+  font-size: 2rem;
+  height: 242px;
+}
+#formulario form .div_input .msg button {
+  background: #39b7dd;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+#formulario form .div_input .msg button:hover {
+  background: #186177;
 }
 
 /*# sourceMappingURL=index.css.map */
