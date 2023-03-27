@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgba(98, 221, 255, 0.879);
-    width: 100%;
+    // width: 100%;
     height: 50%;
     .info{
         &>#formulario{
@@ -33,6 +33,32 @@
     }
 }
 
+
+// Media querie
+$breakpoint-tablet: 768px;
+
+@media (max-width: $breakpoint-tablet) {
+    .div_principal{
+        display: inline;
+        flex-direction: column;
+
+        #informacion, #formulario{
+        width: 100%;
+    }
+    .div_info{
+        div{
+            margin: 0 5rem;
+        }
+    }
+    #formulario{
+        height: 50rem;
+    }
+}
+
+
+
+
+}
 .div_input{
     .input, textarea{
         margin: 10px 0;
