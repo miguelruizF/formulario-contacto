@@ -112,7 +112,7 @@ $breakpoint-tablet: 768px;
                     font-size: 2rem;
                     height: 242px;
                 }
-                button{
+                .btn_submit{
                     background: #39b7dd;
                     text-align: center;
                     padding: 15px;
@@ -123,10 +123,10 @@ $breakpoint-tablet: 768px;
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: 2rem;
-                    transition: all .5s;
-                    &:hover{
-                        background: #186177;
-                    }
+                    // transition: all .5s;
+                    // &:hover{
+                    //     background: #186177;
+                    // }
                 }
             }
         }
