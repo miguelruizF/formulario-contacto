@@ -2,8 +2,9 @@ const d = document;
 
 d.addEventListener("DOMContentLoaded", ()=>{
     const formulario = d.querySelector("#formulario");
-    const btnSubmit = d.querySelector("#formulario button[type='submit']");
+    const btnSubmit = d.querySelector("#btn_submit");
     const inputName = d.querySelector("#nombre");
+    const inputTel = d.querySelector("#telefono");
     const inputEmail = d.querySelector("#email");
     const inputSubject = d.querySelector("#asunto");
     const message = d.querySelector("#mensaje");
@@ -11,15 +12,19 @@ d.addEventListener("DOMContentLoaded", ()=>{
     const email = {
         nombre: "",
         email: "",
+        telefono:"",
         asunto: "",
         mensaje: ""
     }
-
+    // console.log(email);
     // console.log(inputEmail);
-    inputName.addEventListener("blur", validar);
-    inputEmail.addEventListener("blur", validar);
-    inputSubject.addEventListener("blur", validar);
-    message.addEventListener("blur", validar);
+    inputName.addEventListener("input", validar);
+    inputEmail.addEventListener("input", validar);
+    inputSubject.addEventListener("input", validar);
+    inputTel.addEventListener("input", validar);
+    message.addEventListener("input", validar);
+
+    formulario.addEventListener("submit", enviarEmail);
 
     function validar(e){
         // console.log(e.target.value);
@@ -39,7 +44,7 @@ d.addEventListener("DOMContentLoaded", ()=>{
 
         email[e.target.name] = e.target.value.trim().toLowerCase();
 
-        // comprobarEmail();
+        comprobarEmail();
     }
 
     function mostrarAlerta(value, referencia){
@@ -73,10 +78,37 @@ d.addEventListener("DOMContentLoaded", ()=>{
     function comprobarEmail(){
         if(Object.values(email).includes("")){
             btnSubmit.classList.add("opacity-50");
-            btnSubmit.disabled = true;
+            btnSubmit.disable = true;
             return;
         }
         btnSubmit.classList.remove("opacity-50");
         btnSubmit.disabled = false;
+    }
+
+    function enviarEmail(e){
+        e.preventDefault();
+        
+        setTimeout(() => {
+            resetFormulario();
+
+            const alertaEnviado = d.createElement("p");
+            alertaEnviado.classList.add("bg-green", "text-white","rounded", "text-center", "p-2", "font-bold", "uppercase");
+            alertaEnviado.textContent = "Mensaje enviado correctamente";
+            formulario.appendChild(alertaEnviado);
+
+            setTimeout(() => {
+                alertaEnviado.remove();
+            }, 2000);
+        }, 3000);
+    }
+
+    function resetFormulario(){
+        email.email = "";
+        email.asunto = "";
+        email.mensaje = "";
+        email.nombre = "";
+        email.telefono = "";
+        formulario.reset();
+        comprobarEmail();
     }
 });

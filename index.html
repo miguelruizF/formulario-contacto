@@ -22,19 +22,19 @@
                     </div>
                 </div>
             </div>
-            <div id="formulario" class="info">
-                <form action="">
+            <div id="formulario_es" class="info">
+                <form action="" id="formulario" >
                     <h2 class="title_form">Contactame</h2>
                     <div class="div_input">
                         <div class="input_fields">
                             <input id="nombre" type="text" class="input" placeholder="Nombre" name="nombre">
                             <input id="email" type="email" name="email" class="input" placeholder="Correo Electronico">
-                            <input id="telefono" type="text" class="input" placeholder="Telefono">
+                            <input id="telefono" type="text" class="input" placeholder="Telefono" name="telefono">
                             <input id="asunto" type="text" class="input" placeholder="Asunto" name="asunto">
                         </div>
                         <div class="msg">
-                            <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje"name="mensaje"></textarea>
-                            <button class="btn_submit opacity-50" type="submit" disabled>Enviar</button>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"name="mensaje"></textarea>
+                            <button id="btn_submit" class="btn_submit opacity-50" type="submit" disabled>Enviar</button>
                         </div>
                     </div>
                 </form>
@@ -42,5 +42,5 @@
         </div>
     </section>
 </body>
-<script src="js/app.js"></script>
+<script src="./js/app.js"></script>
 </html>

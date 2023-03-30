@@ -42,7 +42,7 @@ $breakpoint-tablet: 768px;
         display: inline;
         flex-direction: column;
 
-        #informacion, #formulario{
+        #informacion, #formulario_es{
         width: 100%;
     }
     .div_info{
@@ -74,7 +74,7 @@ $breakpoint-tablet: 768px;
     }
 }
 
-#formulario{
+#formulario_es{
     background: rgba(0,0,0,0.9);
     border-radius: .5rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);

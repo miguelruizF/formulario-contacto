@@ -37,8 +37,16 @@ section {
   background-color: red;
 }
 
+.bg-green {
+  background-color: rgb(8, 184, 8);
+}
+
 .text-white {
   color: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .p-2 {
@@ -49,8 +57,16 @@ section {
   text-align: center;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 .opacity-50 {
   opacity: 0.5;
+}
+
+.rounded {
+  border-radius: 7px;
 }
 
 .div_principal {
@@ -84,7 +100,7 @@ section {
     display: inline;
     flex-direction: column;
   }
-  .div_principal #informacion, .div_principal #formulario {
+  .div_principal #informacion, .div_principal #formulario_es {
     width: 100%;
   }
   .div_principal .div_info div {
@@ -107,7 +123,7 @@ section {
   color: #c5ecfd;
 }
 
-#formulario {
+#formulario_es {
   background: rgba(0, 0, 0, 0.9);
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -117,36 +133,36 @@ section {
   display: flex;
   align-items: center;
 }
-#formulario form {
+#formulario_es form {
   display: flex;
   flex-direction: column;
   padding: 0 4rem;
 }
-#formulario form .title_form {
+#formulario_es form .title_form {
   color: #c5ecfd;
   text-align: center;
   font-size: 3.5rem;
 }
-#formulario form .div_input {
+#formulario_es form .div_input {
   display: flex;
 }
-#formulario form .div_input .input_fields {
+#formulario_es form .div_input .input_fields {
   margin-right: 4rem;
   width: 48%;
 }
-#formulario form .div_input .input_fields input {
+#formulario_es form .div_input .input_fields input {
   font-size: 2rem;
 }
-#formulario form .div_input .msg {
+#formulario_es form .div_input .msg {
   display: inherit;
   width: 48%;
   flex-direction: column;
 }
-#formulario form .div_input .msg textarea {
+#formulario_es form .div_input .msg textarea {
   font-size: 2rem;
   height: 242px;
 }
-#formulario form .div_input .msg .btn_submit {
+#formulario_es form .div_input .msg .btn_submit {
   background: #39b7dd;
   text-align: center;
   padding: 15px;
